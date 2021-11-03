@@ -46,7 +46,7 @@
         </form>
 
         <div class="text-center">
-            <a href="" class="my-2">Login with GitHub</a>
+            <a href="{{ url('/auth/redirect') }}" class="my-2" target="_blank">Login with GitHub</a>
         </div>
     </x-jet-authentication-card>
 
