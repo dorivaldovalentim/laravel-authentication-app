@@ -48,6 +48,8 @@
         <div class="text-center">
             <a href="{{ route('login.form', 'github') }}" style="margin: 10px; display: inline-block; background: #161b22; color: #ffffff; padding: 10px; text-align: center; border-radius:3px;" target="_blank">Login with GitHub</a>
             <a href="{{ route('login.form', 'facebook') }}" style="margin: 10px; display: inline-block; background: #3B5499; color: #ffffff; padding: 10px; text-align: center; border-radius:3px;" target="_blank">Login with Facebook</a>
+            <a href="{{ route('login.form', 'google') }}" style="margin: 10px; display: inline-block; background: #161b22; color: #ffffff; padding: 10px; text-align: center; border-radius:3px;" target="_blank">Login with Google</a>
+            <a href="{{ route('login.form', 'twitter') }}" style="margin: 10px; display: inline-block; background: #3B5499; color: #ffffff; padding: 10px; text-align: center; border-radius:3px;" target="_blank">Login with Twitter</a>
         </div>
     </x-jet-authentication-card>
 
