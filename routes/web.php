@@ -22,12 +22,12 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
 
-Route::get('/auth/redirect', function() {
-    return Socialite::driver('github')->redirect();
-});
+Route::get('/socialite/{driver}/redirect', function($driver) {
+    return Socialite::driver($driver)->redirect();
+})->name('login.form');
 
-Route::get('/auth/callback', function () {
-    $user = Socialite::driver('github')->user();
+Route::get('/socialite/{driver}/callback', function ($driver) {
+    $user = Socialite::driver($driver)->user();
 
     dd($user);
 });

@@ -46,7 +46,8 @@
         </form>
 
         <div class="text-center">
-            <a href="{{ url('/auth/redirect') }}" class="my-2" target="_blank">Login with GitHub</a>
+            <a href="{{ route('login.form', 'github') }}" style="margin: 10px; display: inline-block; background: #161b22; color: #ffffff; padding: 10px; text-align: center; border-radius:3px;" target="_blank">Login with GitHub</a>
+            <a href="{{ route('login.form', 'facebook') }}" style="margin: 10px; display: inline-block; background: #3B5499; color: #ffffff; padding: 10px; text-align: center; border-radius:3px;" target="_blank">Login with Facebook</a>
         </div>
     </x-jet-authentication-card>
 
