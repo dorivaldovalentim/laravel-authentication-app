@@ -44,5 +44,10 @@
                 </x-jet-button>
             </div>
         </form>
+
+        <div class="text-center">
+            <a href="" class="my-2">Login with GitHub</a>
+        </div>
     </x-jet-authentication-card>
+
 </x-guest-layout>
